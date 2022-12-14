@@ -1,0 +1,299 @@
+@import "vars";
+
+button.btn {
+        box-sizing: border-box;
+        background-color: $darkThemeBlue;
+        border-radius: 0.5em;
+        border:none;
+        color: black;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        padding:20px 50px;
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+}
+
+.btn:hover {
+    box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.4);
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(130deg,transparent,transparent, #fff,transparent,transparent,);
+    transition: all 1s;
+}
+
+.btn:hover:before {
+    left: 100%;
+}
+
+
+
+/////////////////
+// TEST BOUTON //
+/////////////////
+
+
+@media (prefers-color-scheme: dark){
+    button.btn-red {
+    padding:10px 40px 10px 40px;
+    border:none;
+    border-radius:10px;
+    box-shadow:1px 1px 5px black;
+    color:$white;
+    cursor:pointer;
+    background:$darkThemeRed;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+
+button.btn-green {
+    padding:10px 40px 10px 40px;
+    border:none;
+    border-radius:10px;
+    box-shadow:1px 1px 5px black;
+    color:$white;
+    cursor:pointer;
+    background:$darkThemeGreen;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+
+button.btn-blue{
+    padding:10px 40px 10px 40px;
+    border:none;
+    border-radius:10px;
+    box-shadow:1px 1px 5px black;
+    color:$white;
+    cursor:pointer;
+    background:$darkThemeBlue;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+
+button.btn-orange{
+    padding:10px 40px 10px 40px;
+    border:none;
+    border-radius:10px;
+    box-shadow:1px 1px 5px black;
+    color:$white;
+    cursor:pointer;
+    background:$darkThemeOrange;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+a.btn-red {
+    padding:10px 40px 10px 40px;
+    border:none;
+    border-radius:10px;
+    box-shadow:1px 1px 5px black;
+    color:$white;
+    cursor:pointer;
+    background:$darkThemeRed;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration:none;
+}
+
+
+a.btn-green {
+    padding:10px 40px 10px 40px;
+    border:none;
+    border-radius:10px;
+    box-shadow:1px 1px 5px black;
+    color:$white;
+    cursor:pointer;
+    background:$darkThemeGreen;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration:none;
+}
+
+
+a.btn-blue{
+    padding:10px 40px 10px 40px;
+    border:none;
+    border-radius:10px;
+    box-shadow:1px 1px 5px black;
+    color:$white;
+    cursor:pointer;
+    background:$darkThemeBlue;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration:none;
+}
+
+
+a.btn-orange{
+    padding:10px 40px 10px 40px;
+    border:none;
+    border-radius:10px;
+    box-shadow:1px 1px 5px black;
+    color:$white;
+    cursor:pointer;
+    background:$darkThemeOrange;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration:none;
+}
+}
+
+@media (prefers-color-scheme: light){
+    
+    button.btn-red {
+    padding:10px 40px 10px 40px;
+    border:none;
+    border-radius:10px;
+    box-shadow:1px 1px 5px black;
+    color:$white;
+    cursor:pointer;
+    background:$lightThemeRed;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+
+button.btn-green {
+    padding:10px 40px 10px 40px;
+    border:none;
+    border-radius:10px;
+    box-shadow:1px 1px 5px black;
+    color:$white;
+    cursor:pointer;
+    background:$lightThemeGreen;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+
+button.btn-blue{
+    padding:10px 40px 10px 40px;
+    border:none;
+    border-radius:10px;
+    box-shadow:1px 1px 5px black;
+    color:$white;
+    cursor:pointer;
+    background:$lightThemeBlue;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+
+button.btn-orange{
+    padding:10px 40px 10px 40px;
+    border:none;
+    border-radius:10px;
+    box-shadow:1px 1px 5px black;
+    color:$white;
+    cursor:pointer;
+    background:$lightThemeOrange;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+a.btn-red {
+    padding:10px 40px 10px 40px;
+    border:none;
+    border-radius:10px;
+    box-shadow:1px 1px 5px black;
+    color:$white;
+    cursor:pointer;
+    background:$lightThemeRed;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration:none;
+}
+
+
+a.btn-green {
+    padding:10px 40px 10px 40px;
+    border:none;
+    border-radius:10px;
+    box-shadow:1px 1px 5px black;
+    color:$white;
+    cursor:pointer;
+    background:$lightThemeGreen;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration:none;
+}
+
+
+a.btn-blue{
+    padding:10px 40px 10px 40px;
+    border:none;
+    border-radius:10px;
+    box-shadow:1px 1px 5px black;
+    color:$white;
+    cursor:pointer;
+    background:$lightThemeBlue;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration:none;
+}
+
+
+a.btn-orange{
+    padding:10px 40px 10px 40px;
+    border:none;
+    border-radius:10px;
+    box-shadow:1px 1px 5px black;
+    color:$white;
+    cursor:pointer;
+    background:$lightThemeOrange;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration:none;
+}
+}
+    
+

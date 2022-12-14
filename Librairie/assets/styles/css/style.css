@@ -1,0 +1,316 @@
+/******************** POLICES ********************/
+/***** SANS SERIF *****/
+/*** font-family: 'Roboto', sans-serif; ***/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/***** SERIF *****/
+/*** font-family: 'Roboto Slab', serif; ***/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/***** MONOSPACE *****/
+/*** font-family: 'Roboto Mono', monospace; ***/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+button.btn {
+  box-sizing: border-box;
+  background-color: #1499e7;
+  border-radius: 0.5em;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding: 20px 50px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.4);
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(130deg, transparent, transparent, #fff, transparent, transparent);
+  transition: all 1s;
+}
+
+.btn:hover:before {
+  left: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  button.btn-red {
+    padding: 10px 40px 10px 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    color: #ffffff;
+    cursor: pointer;
+    background: #fe4c54;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+  button.btn-green {
+    padding: 10px 40px 10px 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    color: #ffffff;
+    cursor: pointer;
+    background: #3ee8a5;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+  button.btn-blue {
+    padding: 10px 40px 10px 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    color: #ffffff;
+    cursor: pointer;
+    background: #1499e7;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+  button.btn-orange {
+    padding: 10px 40px 10px 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    color: #ffffff;
+    cursor: pointer;
+    background: #fd790f;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+  a.btn-red {
+    padding: 10px 40px 10px 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    color: #ffffff;
+    cursor: pointer;
+    background: #fe4c54;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  a.btn-green {
+    padding: 10px 40px 10px 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    color: #ffffff;
+    cursor: pointer;
+    background: #3ee8a5;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  a.btn-blue {
+    padding: 10px 40px 10px 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    color: #ffffff;
+    cursor: pointer;
+    background: #1499e7;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  a.btn-orange {
+    padding: 10px 40px 10px 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    color: #ffffff;
+    cursor: pointer;
+    background: #fd790f;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
+@media (prefers-color-scheme: light) {
+  button.btn-red {
+    padding: 10px 40px 10px 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    color: #ffffff;
+    cursor: pointer;
+    background: #ba0534;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+  button.btn-green {
+    padding: 10px 40px 10px 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    color: #ffffff;
+    cursor: pointer;
+    background: #106942;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+  button.btn-blue {
+    padding: 10px 40px 10px 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    color: #ffffff;
+    cursor: pointer;
+    background: #2d71e3;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+  button.btn-orange {
+    padding: 10px 40px 10px 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    color: #ffffff;
+    cursor: pointer;
+    background: #d73b07;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+  a.btn-red {
+    padding: 10px 40px 10px 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    color: #ffffff;
+    cursor: pointer;
+    background: #ba0534;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  a.btn-green {
+    padding: 10px 40px 10px 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    color: #ffffff;
+    cursor: pointer;
+    background: #106942;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  a.btn-blue {
+    padding: 10px 40px 10px 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    color: #ffffff;
+    cursor: pointer;
+    background: #2d71e3;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  a.btn-orange {
+    padding: 10px 40px 10px 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    color: #ffffff;
+    cursor: pointer;
+    background: #d73b07;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: black;
+}
+body div {
+  margin: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
